@@ -11,19 +11,16 @@ num2 = gets.chomp
 say "Enter operation: 1) add 2) subtract 3) multiply 4) divide."
 operator = gets.chomp
 
-num1 = num1.to_i
-num2 = num2.to_i
-
 case operator
 when "1"
-  result = num1 + num2
+  result = num1.to_i + num2.to_i
 when "2"
-  result = num1 - num2
+  result = num1.to_i - num2.to_i
 when "3"
-  result = num1 * num2
+  result = num1.to_i * num2.to_i
 when "4"
   if num2 != 0
-    result = num1 / num2
+    result = num1.to_f / num2.to_f
   else
     puts "Sorry, you can't divide by zero."
   end
